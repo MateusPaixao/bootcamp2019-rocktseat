@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "fix": "yarn eslint --fix src --ext .js",
+    "init_eslint": "yarn eslint --init",
+    "fix_all": "yarn eslint --fix src --ext .js",
     "migration": "yarn sequelize migration:create --name=create-users",
     "up_migrate": "yarn sequelize db:migrate",
     "down_migrate": "yarn sequelize db:migrate:undo",
